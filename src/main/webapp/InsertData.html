@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create New Post</title>
+</head>
+<body style="background-color:aqua;">
+	<h1 style="padding-left:40%; padding-right: 40%;">Create A New Post</h1>
+	<div style="padding-left:40%; padding-right: 42%;">
+		<form action="InsertPostDetails" method="post">
+			<p>
+				Product Name: <input type="text" name="prod_name" required="required" pattern="[A-Za-z0-9 ]+"/>
+			</p>
+			<label for='prodDesc'>Product Description:</label>
+			<textarea id='prodDesc' name="prod_desc">
+			</textarea>
+			<p>
+				Image link: <input type="text" name="img_link" />
+			</p>
+			<p>
+				Contact Email: <input type="text" name="email" required="required"/>
+			</p>
+			<p>
+				Contact Name: <input type="text" name="cntct_name" required="required" pattern="[A-Za-z0-9 ]+"/>
+			</p>
+			<p>
+				<input type="submit" />
+			</p>
+		</form>
+	</div>
+</body>
+</html>
